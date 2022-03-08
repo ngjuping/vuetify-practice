@@ -1,4 +1,5 @@
 # todo-ninja
+This is a project by The Net Ninja, rewritten with Vuetify 2.6.
 
 ## Project setup
 ```
@@ -14,11 +15,3 @@ npm run serve
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
