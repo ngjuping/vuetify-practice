@@ -2,16 +2,16 @@
   <div id="app">
     <v-app>
       <v-main>
-        <NavbarVue></NavbarVue>
+        <GlobalNavbar></GlobalNavbar>
         <router-view color="grey" />
       </v-main>
     </v-app>
   </div>
 </template>
 <script>
-import NavbarVue from "./components/Navbar.vue";
+import GlobalNavbar from "./components/GlobalNavbar.vue";
 export default {
-  components: { NavbarVue },
+  components: { GlobalNavbar },
 };
 </script>
 <style lang="scss"></style>

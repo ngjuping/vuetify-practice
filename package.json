@@ -5,13 +5,17 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "eslint --ext .js,.vue src/ --fix"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "echarts": "^5.3.1",
+    "moment": "^2.29.1",
     "vue": "^2.6.14",
+    "vue-echarts": "^6.0.2",
     "vue-router": "^3.5.1",
-    "vuetify": "^2.6.0"
+    "vuetify": "^2.6.0",
+    "webpack": "^5.70.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
@@ -20,11 +24,17 @@
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
+    "@vue/composition-api": "^1.4.9",
+    "babel-loader": "^8.2.3",
     "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-vue": "^8.0.3",
+    "prettier": "^2.4.1",
     "sass": "~1.32.0",
     "sass-loader": "^10.0.0",
     "vue-cli-plugin-vuetify": "~2.4.7",
+    "vue-loader": "^15.9.8",
     "vue-template-compiler": "^2.6.14",
     "vuetify-loader": "^1.7.0"
   },
@@ -35,7 +45,8 @@
     },
     "extends": [
       "plugin:vue/essential",
-      "eslint:recommended"
+      "eslint:recommended",
+      "plugin:prettier/recommended"
     ],
     "parserOptions": {
       "parser": "@babel/eslint-parser"

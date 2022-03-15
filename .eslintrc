@@ -1,0 +1,7 @@
+{
+  "extends": ["eslint:recommended", "plugin:vue/recommended"],
+  "rules": {
+    "vue/html-self-closing": "off",
+    "vue/html-indent": ["error", 2, { "attribute": 2, "closeBracket": 0 }]
+  }
+}
